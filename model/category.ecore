@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="category" nsURI="http://www.editorCT.org/category" nsPrefix="category">
+  <eClassifiers xsi:type="ecore:EClass" name="Category" eSuperTypes="#//Object">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arrow" upperBound="-1"
+        eType="#//Arrow" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="object" upperBound="-1"
+        eType="#//Object" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Arrow" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="domain" lowerBound="1"
+        eType="#//Object"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="codomain" lowerBound="1"
+        eType="#//Object"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Object" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Morphism" eSuperTypes="#//Arrow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ID" eSuperTypes="#//Arrow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Functor" eSuperTypes="#//Arrow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Composition" eSuperTypes="#//Arrow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Naturaltranformation" eSuperTypes="#//Arrow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Commutearrow" eSuperTypes="#//Arrow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Monomorphism" eSuperTypes="#//Morphism"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Epimorphism" eSuperTypes="#//Morphism"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Isomorphism" eSuperTypes="#//Morphism"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Endomorphism" eSuperTypes="#//Morphism"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Endofunctor" eSuperTypes="#//Functor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Simple" eSuperTypes="#//Object"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Set" eSuperTypes="#//Object"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Limit" abstract="true" eSuperTypes="#//Object"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Colimit" abstract="true" eSuperTypes="#//Object"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Product" eSuperTypes="#//Limit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Coproduct" eSuperTypes="#//Colimit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Terminal" eSuperTypes="#//Limit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Initial" eSuperTypes="#//Colimit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Equalizer" eSuperTypes="#//Limit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Coequalizer" eSuperTypes="#//Colimit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pullback" eSuperTypes="#//Limit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pushout" eSuperTypes="#//Colimit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Generallimit" eSuperTypes="#//Limit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Generalcolimit" eSuperTypes="#//Colimit"/>
+</ecore:EPackage>

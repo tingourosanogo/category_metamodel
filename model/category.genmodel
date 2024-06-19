@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/emf.category/src-gen" creationIcons="false" editDirectory="/emf.category.edit/src-gen"
+    editorDirectory="/emf.category.editor/src-gen" modelPluginID="emf.category" modelName="Category"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>category.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Category" basePackage="emf" disposableProviderFactory="true"
+      ecorePackage="category.ecore#/">
+    <genClasses ecoreClass="category.ecore#//Category">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference category.ecore#//Category/arrow"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference category.ecore#//Category/object"/>
+    </genClasses>
+    <genClasses ecoreClass="category.ecore#//Arrow">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute category.ecore#//Arrow/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference category.ecore#//Arrow/domain"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference category.ecore#//Arrow/codomain"/>
+    </genClasses>
+    <genClasses ecoreClass="category.ecore#//Object">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute category.ecore#//Object/name"/>
+    </genClasses>
+    <genClasses ecoreClass="category.ecore#//Morphism"/>
+    <genClasses ecoreClass="category.ecore#//ID"/>
+    <genClasses ecoreClass="category.ecore#//Functor"/>
+    <genClasses ecoreClass="category.ecore#//Composition"/>
+    <genClasses ecoreClass="category.ecore#//Naturaltranformation"/>
+    <genClasses ecoreClass="category.ecore#//Commutearrow"/>
+    <genClasses ecoreClass="category.ecore#//Monomorphism"/>
+    <genClasses ecoreClass="category.ecore#//Epimorphism"/>
+    <genClasses ecoreClass="category.ecore#//Isomorphism"/>
+    <genClasses ecoreClass="category.ecore#//Endomorphism"/>
+    <genClasses ecoreClass="category.ecore#//Endofunctor"/>
+    <genClasses ecoreClass="category.ecore#//Simple"/>
+    <genClasses ecoreClass="category.ecore#//Set"/>
+    <genClasses ecoreClass="category.ecore#//Limit"/>
+    <genClasses ecoreClass="category.ecore#//Colimit"/>
+    <genClasses ecoreClass="category.ecore#//Product"/>
+    <genClasses ecoreClass="category.ecore#//Coproduct"/>
+    <genClasses ecoreClass="category.ecore#//Terminal"/>
+    <genClasses ecoreClass="category.ecore#//Initial"/>
+    <genClasses ecoreClass="category.ecore#//Equalizer"/>
+    <genClasses ecoreClass="category.ecore#//Coequalizer"/>
+    <genClasses ecoreClass="category.ecore#//Pullback"/>
+    <genClasses ecoreClass="category.ecore#//Pushout"/>
+    <genClasses ecoreClass="category.ecore#//Generallimit"/>
+    <genClasses ecoreClass="category.ecore#//Generalcolimit"/>
+  </genPackages>
+</genmodel:GenModel>
